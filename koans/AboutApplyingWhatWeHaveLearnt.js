@@ -32,16 +32,38 @@ describe("About Applying What We Have Learnt", function() {
         }
     }
 
-    expect(productsICanEat.length).toBe(FILL_ME_IN);
+    expect(productsICanEat.length).toBe(1);
   });
 
   it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (functional)", function () {
 
       var productsICanEat = [];
 
+      expect(productsICanEat.length).toBe(0);
+
       /* solve using filter() & all() / any() */
 
-      expect(productsICanEat.length).toBe(FILL_ME_IN);
+      // it("should use 'all' to test whether all items pass condition", function () {
+      //   var onlyEven = [2, 4, 6];
+      //   var mixedBag = [2, 4, 5, 6];
+    
+      //   var isEven = function (x) { return x % 2 === 0 };
+    
+      //   expect(_(onlyEven).all(isEven)).toBe(true);
+      //   expect(_(mixedBag).all(isEven)).toBe(false);
+      // });
+    
+      // it("should use 'any' to test if any items passes condition", function () {
+      //   var onlyEven = [2, 4, 6];
+      //   var mixedBag = [2, 4, 5, 6];
+    
+      //   var isEven = function (x) { return x % 2 === 0 };
+    
+      //   expect(_(onlyEven).any(isEven)).toBe(true);
+      //   expect(_(mixedBag).any(isEven)).toBe(true);
+      // });
+
+
   });
 
   /*********************************************************************************/
@@ -75,7 +97,7 @@ describe("About Applying What We Have Learnt", function() {
         }
     }
 
-    expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
+    expect(ingredientCount['mushrooms']).toBe(2);
   });
 
   it("should count the ingredient occurrence (functional)", function () {
